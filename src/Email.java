@@ -37,6 +37,7 @@ public class Email {
     public Email (String recipient,String sender){
         setRecipient(recipient);
         setSender(sender);
+        this.message = "Empty";
     }
 
    public String append(String text) {
