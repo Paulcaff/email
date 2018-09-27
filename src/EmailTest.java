@@ -3,23 +3,24 @@ public class EmailTest {
 
     public static void main(String[] args) {
 
-        email emailTest = new email();
+        Email emailTest = new Email();
 
         System.out.println(emailTest.toString());
 
-        email email2 = new email("\tJames O' Donoghue", "\tColm Cooper", "\tHey There GOOCH");
+        Email email2 = new Email("\tJames O' Donoghue", "\tColm Cooper");
         System.out.println(email2.toString());
 
 
-        email email3 = new email();
+        Email email3 = new Email();
 
         email3.setRecipient("\tLionel Messi");
         email3.setSender("\tChristiano Ronaldo");
-        email3.setMessage("\tYou are the Goat");
+
 
         email3.getSender();
         email3.getRecipient();
-        email3.getMessage();
+        email3.append("ppp");
+
 
         System.out.println(email3.toString());
     }

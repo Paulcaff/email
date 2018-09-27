@@ -1,12 +1,9 @@
-public class email {
+public class Email {
 
     private String recipient;
     private String sender;
     private String message;
 
-    public static void main(String[] args) {
-
-    }
 
     public void setRecipient(String recipient){
         this.recipient = recipient;
@@ -16,9 +13,6 @@ public class email {
         this.sender = sender;
     }
 
-    public void setMessage(String message){
-        this.message = message;
-    }
 
     public String getRecipient(){
         return recipient;
@@ -28,28 +22,35 @@ public class email {
         return sender;
     }
 
-    public String getMessage(){
-        return message;
-    }
 
     public String toString(){
         return ("FROM: "+sender+ "\nTO: "+recipient+ "\nMessage"+ message);
     }
 
-    public email (){
+    public Email (){
 
         this.recipient = "None";
         this.sender = "None";
-        this.message = "Empty ";
+        this.message = "Empty";
     }
 
-    public email (String recipient,String sender,String message){
+    public Email (String recipient,String sender){
         setRecipient(recipient);
         setSender(sender);
-        setMessage(message);
     }
 
-   // public append(String message){
+   public String append(String text) {
+
+       if(this.message.equals("Empty")){
+           this.message = "";
+       }
+
+      this.message += text;
+
+       return message;
+   }
+
+
 
 
 }
