@@ -44,12 +44,13 @@ public class MyPoint {
     public void translate(int moveH, int moveV){
         moveHorizontally(moveH);
         moveVertically(moveV);
+
     }
 
     public double DistanceFromOrigin(){
         //double xy2 = (xVal * xVal)*(yVal * yVal);
 
-        double ans = Math.sqrt((xVal * xVal)*(yVal * yVal));
+        double ans = Math.sqrt(((xVal * xVal)+(yVal * yVal)));
 
 
         return ans;

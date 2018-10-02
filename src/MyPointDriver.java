@@ -12,7 +12,7 @@ public class MyPointDriver {
         ab.toString();
 
         ab.moveVertically(3);
-        ab.moveHorizontally(3);
+        ab.moveHorizontally(4);
         System.out.println(ab.getxVal());
         System.out.println(ab.getxVal());
 
