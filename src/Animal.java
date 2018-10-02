@@ -25,9 +25,10 @@ public class Animal {
         }
     }
 
-    public String getContinents(){
-        return continents[];
+    public String[] getContinents() {
+        return continents;
     }
+
     public String getType(){
         return type;
     }
@@ -41,10 +42,10 @@ public class Animal {
     }
 
     public Animal(){
-        this.type = "No Type Specified";
+        this.type = "No Type Specified   ";
         this.age = 0;
         this.weight = (float) 0.0;
-        this.continents = continents[] ;
+        this.continents = continents ;
 
     }
 
@@ -52,11 +53,20 @@ public class Animal {
         setType(type);
         setAge(age);
         setWeight(weight);
-        setContinents(continents[i]);
+        setContinents(continents);
     }
 
     public String toString(){
-        return ("Type :"+type+ "Age: "+age+ "Weight: "+weight+ "Continent: "+continents);
+        String str="";
+
+        if(continents[0] == null){
+            return str;
+        }
+        for(String a : continents){
+            str += a +"\n";
+
+        }
+        return ("Type :"+type+ "\nAge: "+age+ "\nWeight: "+weight+ "\nContinent: "+str);
     }
 
 }
