@@ -28,7 +28,7 @@ public class Bicycle {
         return name;
     }
     public String toString(){
-        return "Name: "+name+"\nValue: "+"\nMake: "+make;
+        return "Name: "+name+"\nValue: "+value+"\nMake: "+make;
     }
 
     public Bicycle() {
@@ -37,7 +37,7 @@ public class Bicycle {
         this.make = "None";
     }
 
-    public Bicycle(String name,String make,Double value){
+    public Bicycle(String name,String make,double value){
         setName(name);
         setMake(make);
         setValue(value);
