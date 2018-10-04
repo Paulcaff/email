@@ -11,6 +11,8 @@ public class FractionDriver {
         Fraction fraction6= new Fraction();
 
         System.out.println(fraction.toString());
+
+
         fraction3 = fraction.add(fraction2);
         System.out.println(fraction3);
 
