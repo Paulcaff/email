@@ -14,7 +14,7 @@ public class MyPointDriver {
         ab.moveVertically(3);
         ab.moveHorizontally(4);
         System.out.println(ab.getxVal());
-        System.out.println(ab.getxVal());
+        System.out.println(ab.getyVal());
 
         
         System.out.print(ab.DistanceFromOrigin());

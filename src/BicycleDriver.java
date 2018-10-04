@@ -1,5 +1,5 @@
 import javax.swing.*;
-import java.sql.SQLOutput;
+
 
 public class BicycleDriver {
 
@@ -17,6 +17,13 @@ public class BicycleDriver {
 
         System.out.println(bicycle2.toString());
 
+        System.out.println(bicycle3.toString());
+
+        double totalValue = bicycle3.getValue() + bicycle2.getValue();
+
+
+        System.out.println(bicycle2.getName() + bicycle3.getName());
+        System.out.println(totalValue);
 
 
 
@@ -39,6 +46,9 @@ public class BicycleDriver {
         String name = JOptionPane.showInputDialog(null, "Please enter your name: ");
         String make = JOptionPane.showInputDialog(null, "Please enter your make of bike: ");
         double value = Double.parseDouble(JOptionPane.showInputDialog(null, "Please enter the value of the bike:"));
+
+        value += 10 ;
+
 
         bike.setName(name);
         bike.setValue(value);
